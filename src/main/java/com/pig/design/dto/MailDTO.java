@@ -1,4 +1,4 @@
-package compig.design.dto;
+package com.pig.design.dto;
 
 import lombok.Builder;
 import lombok.Data;

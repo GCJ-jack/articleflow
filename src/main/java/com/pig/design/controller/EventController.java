@@ -1,10 +1,9 @@
-package compig.design.controller;
+package com.pig.design.controller;
 
 import cn.hutool.extra.spring.SpringUtil;
-import compig.design.dto.MailDTO;
-import compig.design.event.BaseEvent;
+import com.pig.design.dto.MailDTO;
+import com.pig.design.event.BaseEvent;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
