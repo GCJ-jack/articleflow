@@ -30,10 +30,8 @@ public class MailEventListener {
     public void listen(BaseEvent<MailDTO> event){
         MailDTO mailDTO = event.getData();
 
-        log.info(mailDTO.getMail() + " " + mailDTO.getContent());
-
         String htmlContent = buildEmailHtml(mailDTO);
-
+        log.info(mailDTO.getMail() + " " + mailDTO.getTitle());
         log.info(htmlContent);
     }
 

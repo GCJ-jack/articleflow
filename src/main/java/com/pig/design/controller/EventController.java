@@ -42,8 +42,11 @@ public class EventController {
         MailDTO mailDTO = MailDTO.builder()
                 .mail("xxxx@qq.com")
                 .title("文件导出到数据库完成")
-                .content("文件导出到数据库完成了, 请及时查收").build();
-
+                .data("待审批数据A")
+                .submitTime(DateUtil.format(LocalDateTime.now(), "yyyy-MM-dd HH:mm:ss"))
+                .endTime(DateUtil.format(LocalDateTime.now(), "yyyy-MM-dd HH:mm:ss"))
+                .url("www.xxxx.com")
+                .build();
 
         SpringUtil.publishEvent(new BaseEvent<>(mailDTO, this));
 
