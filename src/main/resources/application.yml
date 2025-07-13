@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: event
+
+  freemarker:
+    charset: UTF-8 # 编码
+    template-loader-path: classpath:/templates/ # 模板路径

@@ -2,10 +2,11 @@ package com.pig.design.config;
 
 import org.apache.tomcat.util.threads.ThreadPoolExecutor;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.TimeUnit;
-
+@Configuration
 public class ThreadPoolConfig {
 
     // private static final int CPU_NUM = Runtime.getRuntime().availableProcessors();
